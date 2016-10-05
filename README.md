@@ -1,3 +1,3 @@
 # Simple-DHT
 
-The project Implements a simple Distributed Hash Table using CHORD protocol. The implementation is carried out on Android. Project description can be found at https://docs.google.com/document/u/0/d/154pUC7gd714noxwmuITNJztqQBYj5IimjaqzSgFTR3s/edit?usp=sharing
+A simple DHT based on Chord and implementation of ID space partitioning/re-partitioning, Ring-based routing, and Node joins. The content provider implemented all DHT functionalities and supported insert, query and delete operations. On running multiple instances of app, all 5 content provider instances formed a Chord ring and served insert/query/delete requests in a distributed fashion according to the Chord protocol. ConcourseDB has been used to store key-value pairs in one record by the Content Provider instance of each avd.
